@@ -280,9 +280,6 @@ void validateAndFixConfig(void)
         if (gyroConfig()->gyro_lpf == 0) {
             denominatorLimit = 16;
         }
-        if (gyroConfig()->gyroSyncDenominator < denominatorLimit) {
-            gyroConfigMutable()->gyroSyncDenominator = denominatorLimit;
-        }
         if (gyroConfig()->looptime < 2000) {
             gyroConfigMutable()->looptime = 2000;
         }
