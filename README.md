@@ -3,6 +3,22 @@
 ![INAV](http://static.rcgroups.net/forums/attachments/6/1/0/3/7/6/a9088858-102-inav.png)
 ![Travis CI status](https://travis-ci.org/iNavFlight/inav.svg?branch=master)
 
+## Fork Features
+
+* iNav 1.9.1, with a couple of patches applied.
+* CC3D and OLIMEXINO targets can be compiled (`./build.sh CC3D`).
+* NAZE32, PORT103R, OLIMEXINO, EUSTM32F103RC, CRAZEPONYMINI and CJMCU are enabled, but do not compile due to [this pr](https://github.com/iNavFlight/inav/pull/2290). As I have a CC3D, I didn't bother fixing the issues.
+
+Why use 1.9.1 instead of upstream's 1.7.3?
+
+*FPort*
+
+Note that the default targets ROM sizes are too large:
+
+https://github.com/iNavFlight/inav/wiki/Building-custom-firmware
+
+If no barometer is needed, disable USE_BARO in `src/main/target/$TARGET/target.h` and you'll have enough space.
+
 ## Features
 
 * Outstanding navigation performance out of the box
