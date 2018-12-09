@@ -19,6 +19,8 @@ https://github.com/iNavFlight/inav/wiki/Building-custom-firmware
 
 If no barometer is needed, disable USE_BARO in `src/main/target/$TARGET/target.h` and you'll have enough space.
 
+A list of devices that can be enabled is in `src/main/drivers/bus.h`.
+
 ## Features
 
 * Outstanding navigation performance out of the box
