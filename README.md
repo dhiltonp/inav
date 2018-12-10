@@ -21,6 +21,9 @@ If no barometer is needed, disable USE_BARO in `src/main/target/$TARGET/target.h
 
 A list of devices that can be enabled is in `src/main/drivers/bus.h`.
 
+If using a bin instead of a hex file (OPBL=yes), lots of slimming will be necessary; I removed support for barometers, magnetometers, all unused telemetry and rx protocols plus a little extra.
+
+
 ## Features
 
 * Outstanding navigation performance out of the box

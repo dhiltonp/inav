@@ -54,13 +54,13 @@
 #define ACC_MPU6000_ALIGN CW270_DEG
 
 // External I2C BARO
-#define USE_BARO
-#define BARO_I2C_BUS            BUS_I2C2
-#define USE_BARO_MS5611
-#define USE_BARO_BMP280
+//#define USE_BARO
+//#define BARO_I2C_BUS            BUS_I2C2
+//#define USE_BARO_MS5611
+//#define USE_BARO_BMP280
 
 // External I2C MAG
-#define USE_MAG
+//#define USE_MAG
 #define MAG_I2C_BUS             BUS_I2C2
 #define USE_MAG_HMC5883
 #define USE_MAG_QMC5883
@@ -153,7 +153,7 @@
 #define WS2811_DMA_TC_FLAG              DMA1_FLAG_TC6
 #define WS2811_DMA_HANDLER_IDENTIFER    DMA1_CH6_HANDLER
 
-#define USE_SPEKTRUM_BIND
+//#define USE_SPEKTRUM_BIND
 // USART3, PB11 (Flexport)
 #define BIND_PIN                PB11
 
@@ -168,7 +168,7 @@
 //#define NAV_AUTO_MAG_DECLINATION
 //#define NAV_GPS_GLITCH_DETECTION
 #undef USE_BLACKBOX
-#define ENABLE_BLACKBOX_LOGGING_ON_SPIFLASH_BY_DEFAULT
+//#define ENABLE_BLACKBOX_LOGGING_ON_SPIFLASH_BY_DEFAULT
 
 #define DISABLE_UNCOMMON_MIXERS
 
